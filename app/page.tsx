@@ -1,9 +1,16 @@
-import { Button } from "@/components/ui/button";
+import BgGradient from "@/components/home/BgGradient";
+import DemoSection from "@/components/home/DemoSection";
+
+import HeroSection from "@/components/home/HeroSection";
+import HowItWorksSection from "@/components/home/HowItWorksSection";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Button variant="destructive">Shadcn</Button>
+    <div className="relative w-full">
+      <BgGradient />
+      <HeroSection />
+      <DemoSection />
+      <HowItWorksSection />
     </div>
   );
 }
