@@ -25,3 +25,33 @@ export const steps: stepsType[] = [
     description: "Receive a clear, concise summary of your document",
   },
 ] as const;
+
+export const plans = [
+  {
+    id: "basic",
+    name: "Basic",
+    price: 1,
+    description: "Perfect for ocassional use",
+    items: [
+      "5 PDFs summaries per month",
+      "Standard processing speed",
+      "Email Support",
+    ],
+    paymentLink: "",
+    priceId: "",
+  },
+  {
+    id: "pro",
+    name: "Pro",
+    price: 10,
+    description: "For professionals and teams",
+    items: [
+      "Unlimited PDF summaries",
+      "Priority processing",
+      "24/7 priority support",
+      "Markdown Export",
+    ],
+    paymentLink: "",
+    priceId: "",
+  },
+] as const;
