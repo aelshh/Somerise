@@ -3,10 +3,14 @@ import { Badge } from "../ui/badge";
 import React from "react";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import BgGradient from "./BgGradient";
 
 const HeroSection = () => {
   return (
     <section className="flex flex-col z-0 justify-center items-center relative mx-auto py-16 sm:py-20 lg:pb-28 transition-all animate-in lg:px-12 mx-w-7xl">
+      <BgGradient />
+      <BgGradient className="!top-auto !left-auto !-bottom-100 !-right-20 " />
+
       <div className="flex ">
         <div className="relative p-[1px]  bg-linear-to-r from-rose-200 via-rose-500 to-rose-800 rounded-full overflow-hidden animate-gradient-x  group">
           <Badge
@@ -23,7 +27,7 @@ const HeroSection = () => {
         <span className="relative inline-block">
           <span className="relative z-10 px-2">concise</span>
           <span
-            className="absolute inset-0 transform -rotate-2 bg-rose-200/50 -skew-y-1 "
+            className="absolute inset-0 transform rouned-lg -rotate-2 bg-rose-200/50 -skew-y-1 "
             aria-hidden={true}
           ></span>
         </span>{" "}
